@@ -39,7 +39,7 @@ int fold(vector<int>& vec, function <int(int, int)> func)
         return 0;
     }
     int result = vec[0];
-    for (size_t i = 1; i < vec.size(); i++)
+    for (auto i = 1; i < vec.size(); i++)
     {
         result = func(result, vec[i]);
     }
